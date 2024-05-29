@@ -24,11 +24,11 @@ jobs:
           deno-version: v1.x
 
       - name: Build step
-        run: "deno task build"
+        run: "index"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "lookbao-deno-0529-22"
-          entrypoint: "main.ts"
-          root: "."
+          project: "lookbao-deno-0529-58"
+          entrypoint: "index.js"
+          root: ""
